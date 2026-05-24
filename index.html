@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jamia Masjid Ali ibn Abi Talib – Islamabad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <!--
+    :root {
+      --green: #1a6b3c;
+      --green-dark: #0f4526;
+      --green-light: #2a8a52;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --cream: #faf7f0;
+      --white: #ffffff;
+      --text: #1e1e1e;
+      --text-muted: #666;
+      --border: #d9cdb8;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ─── TOP BAR ─── */
+    .topbar {
+      background: var(--green-dark);
+      color: rgba(255,255,255,.75);
+      font-size: .78rem;
+      letter-spacing: .04em;
+      padding: .45rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .topbar a { color: var(--gold-light); text-decoration: none; }
+    .topbar a:hover { text-decoration: underline; }
+
+    /* ─── HEADER ─── */
+    header {
+      background: var(--green);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 18px rgba(0,0,0,.25);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .8rem 2rem;
+      gap: 1.5rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 58px;
+      height: 58px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 3px rgba(255,255,255,.25);
+    }
+    .logo-text { line-height: 1.2; }
+    .logo-text .arabic {
+      font-family: 'Amiri', serif;
+      font-size: 1.25rem;
+      color: var(--gold-light);
+    }
+    .logo-text .english {
+      font-size: .72rem;
+      color: rgba(255,255,255,.75);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    nav { display: flex; gap: 0; align-items: center; }
+    nav a {
+      color: rgba(255,255,255,.85);
+      text-decoration: none;
+      padding: .6rem 1rem;
+      font-size: .85rem;
+      letter-spacing: .03em;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: color .2s, background .2s;
+      border-radius: 4px;
+    }
+    nav a:hover { color: var(--gold-light); background: rgba(255,255,255,.08); }
+
+    .btn-donate {
+      background: var(--gold);
+      color: var(--green-dark) !important;
+      border-radius: 4px;
+      padding: .55rem 1.2rem !important;
+      font-weight: 700;
+      letter-spacing: .05em;
+      transition: background .2s !important;
+    }
+    .btn-donate:hover { background: var(--gold-light) !important; color: var(--green-dark) !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: .4rem;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: white;
+      border-radius: 2px;
+      transition: .3s;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 60%, #2a7a48 100%);
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 80% 20%, rgba(201,168,76,.15) 0%, transparent 60%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    /* Mosque silhouette decoration */
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='rgba(255,255,255,0.04)'%3E%3Cellipse cx='400' cy='200' rx='120' ry='160'/%3E%3Crect x='300' y='200' width='200' height='300'/%3E%3Cellipse cx='200' cy='280' rx='60' ry='80'/%3E%3Crect x='160' y='280' width='80' height='220'/%3E%3Cellipse cx='600' cy='280' rx='60' ry='80'/%3E%3Crect x='560' y='280' width='80' height='220'/%3E%3Crect x='180' y='480' width='440' height='20'/%3E%3C/g%3E%3C/svg%3E") no-repeat right bottom / contain;
+      opacity: .8;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(201,168,76,.2);
+      border: 1px solid rgba(201,168,76,.5);
+      color: var(--gold-light);
+      font-size: .75rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      padding: .35rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    .hero-arabic {
+      font-family: 'Amiri', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: var(--gold-light);
+      margin-bottom: .5rem;
+      line-height: 1.3;
+      direction: rtl;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      color: white;
+      line-height: 1.15;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+    .hero h1 span { color: var(--gold-light); }
+    .hero p {
+      color: rgba(255,255,255,.7);
+      font-size: 1.05rem;
+      max-width: 520px;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--green-dark);
+      border: none;
+      padding: .85rem 2rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: .9rem;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255,255,255,.4);
+      padding: .83rem 2rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: .9rem;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-outline:hover { border-color: var(--gold-light); background: rgba(255,255,255,.06); }
+
+    /* ─── PRAYER TIMES STRIP ─── */
+    .prayer-strip {
+      background: var(--green-dark);
+      border-top: 3px solid var(--gold);
+    }
+    .prayer-strip-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+    }
+    .prayer-cell {
+      padding: 1.4rem 1rem;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,.08);
+      transition: background .2s;
+    }
+    .prayer-cell:last-child { border-right: none; }
+    .prayer-cell:hover { background: rgba(255,255,255,.04); }
+    .prayer-cell.active {
+      background: rgba(201,168,76,.15);
+      border-top: 3px solid var(--gold);
+      margin-top: -3px;
+    }
+    .prayer-name {
+      font-size: .7rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      font-weight: 700;
+      margin-bottom: .3rem;
+    }
+    .prayer-arabic {
+      font-family: 'Amiri', serif;
+      font-size: 1rem;
+      color: rgba(255,255,255,.6);
+      margin-bottom: .3rem;
+    }
+    .prayer-time {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+      font-family: 'Playfair Display', serif;
+    }
+    .prayer-time.tbd { font-size: .9rem; color: rgba(255,255,255,.45); }
+
+    /* ─── SECTION COMMON ─── */
+    section { padding: 5rem 2rem; }
+    .section-inner { max-width: 1200px; margin: auto; }
+    .section-label {
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: .7rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: var(--green-dark);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .section-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin-bottom: 2rem;
+    }
+
+    /* ─── ABOUT ─── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .about-text p {
+      color: var(--text-muted);
+      line-height: 1.85;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .stat-box {
+      background: var(--green);
+      padding: 1.5rem;
+      border-radius: 6px;
+      text-align: center;
+      color: white;
+    }
+    .stat-box .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gold-light);
+    }
+    .stat-box .label { font-size: .8rem; opacity: .75; margin-top: .2rem; }
+    .about-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .about-img {
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,.12);
+    }
+    .about-img img { width: 100%; height: 180px; object-fit: cover; display: block; }
+    .about-img.tall img { height: 376px; }
+    .img-placeholder {
+      width: 100%;
+      background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.6);
+      font-size: .8rem;
+      gap: .5rem;
+    }
+    .img-placeholder .emoji { font-size: 2rem; }
+
+    /* ─── SERVICES ─── */
+    .services-section { background: white; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .service-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: border-color .2s, box-shadow .2s, transform .2s;
+      cursor: default;
+    }
+    .service-card:hover {
+      border-color: var(--green);
+      box-shadow: 0 8px 30px rgba(26,107,60,.1);
+      transform: translateY(-4px);
+    }
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+      border-radius: 50%;
+      margin: 0 auto 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+    .service-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--green-dark);
+      margin-bottom: .7rem;
+    }
+    .service-card p { color: var(--text-muted); font-size: .9rem; line-height: 1.7; }
+
+    /* ─── PRAYER TIMES FULL ─── */
+    .prayer-section { background: var(--cream); }
+    .prayer-table-wrap {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 30px rgba(0,0,0,.07);
+      margin-top: 2rem;
+    }
+    .prayer-table-header {
+      background: var(--green);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .prayer-table-header h3 {
+      font-family: 'Playfair Display', serif;
+      color: white;
+      font-size: 1.3rem;
+    }
+    .prayer-table-header .date { color: var(--gold-light); font-size: .85rem; }
+    table { width: 100%; border-collapse: collapse; }
+    thead th {
+      background: var(--green-dark);
+      color: var(--gold-light);
+      font-size: .72rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .9rem 1.5rem;
+      text-align: left;
+    }
+    tbody tr { border-bottom: 1px solid #f0ebe0; transition: background .15s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #f9f6ef; }
+    tbody td { padding: 1.1rem 1.5rem; font-size: .95rem; }
+    tbody td:first-child { font-weight: 700; color: var(--green); }
+    tbody td .arabic-small { font-family: 'Amiri', serif; font-size: 1.1rem; color: #999; margin-left: .5rem; }
+    .time-badge {
+      display: inline-block;
+      background: #f0f7f3;
+      color: var(--green);
+      border-radius: 100px;
+      padding: .2rem .8rem;
+      font-weight: 700;
+      font-size: .9rem;
+    }
+    .time-badge.tbd { background: #f5f5f5; color: #bbb; }
+
+    /* ─── GALLERY ─── */
+    .gallery-section { background: var(--green-dark); }
+    .gallery-section .section-title { color: white; }
+    .gallery-section .section-label { color: var(--gold-light); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 220px 220px;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery-item {
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-item:first-child { grid-row: 1 / 3; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--green) 0%, rgba(10,40,20,.8) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.4);
+      font-size: 2.5rem;
+    }
+
+    /* ─── CONTACT ─── */
+    .contact-section { background: white; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-top: 2rem;
+    }
+    .contact-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--green-dark);
+      margin-bottom: 1.5rem;
+    }
+    .info-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+      align-items: flex-start;
+    }
+    .info-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+    .info-text { color: var(--text-muted); line-height: 1.6; font-size: .95rem; }
+    .info-text strong { display: block; color: var(--text); margin-bottom: .2rem; }
+
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: .4rem; }
+    .form-group label { font-size: .82rem; font-weight: 700; color: var(--green-dark); letter-spacing: .04em; text-transform: uppercase; }
+    .form-group input,
+    .form-group textarea {
+      border: 1.5px solid var(--border);
+      border-radius: 5px;
+      padding: .75rem 1rem;
+      font-family: 'Lato', sans-serif;
+      font-size: .95rem;
+      color: var(--text);
+      background: var(--cream);
+      transition: border-color .2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus { border-color: var(--green); background: white; }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--green-dark);
+      color: rgba(255,255,255,.7);
+      padding: 3.5rem 2rem 1.5rem;
+    }
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand .arabic {
+      font-family: 'Amiri', serif;
+      font-size: 1.4rem;
+      color: var(--gold-light);
+      margin-bottom: .4rem;
+    }
+    .footer-brand p { font-size: .88rem; line-height: 1.7; margin-top: .8rem; }
+    footer h4 {
+      color: white;
+      font-size: .8rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    footer ul { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
+    footer ul li a {
+      color: rgba(255,255,255,.6);
+      text-decoration: none;
+      font-size: .88rem;
+      transition: color .2s;
+    }
+    footer ul li a:hover { color: var(--gold-light); }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: auto;
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: .8rem;
+    }
+    .footer-bottom .gold { color: var(--gold-light); }
+
+    /* ─── ANNOUNCEMENT BANNER ─── */
+    .announcement {
+      background: linear-gradient(90deg, var(--gold) 0%, #b8952e 100%);
+      padding: .7rem 2rem;
+      text-align: center;
+      font-size: .85rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      letter-spacing: .02em;
+    }
+
+    /* ─── FLOATING PRAYER TIME CLOCK ─── */
+    #clock-display {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--gold-light);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .about-grid,
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .gallery-item:first-child { grid-row: auto; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .prayer-strip-inner { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 640px) {
+      nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--green-dark); padding: 1rem; gap: .3rem; }
+      nav.open { display: flex; }
+      .hamburger { display: flex; }
+      .header-inner { flex-wrap: wrap; }
+      .services-grid { grid-template-columns: 1fr; }
+      .prayer-strip-inner { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+  -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="light">
+
+<!-- ANNOUNCEMENT -->
+<div class="announcement">
+  Mosque is Under Construction. Help us build a better Masjid. Donate Today! Last Update 24th May 2026
+</div>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader" aria-live="polite" aria-busy="true">
+  <div class="preloader-inner">
+    <div class="preloader-title">Jamia Masjid Ali ibn Abi Talib</div>
+    <div class="preloader-text">Mosque is under construction</div>
+    <div class="preloader-bar" aria-hidden="true"></div>
+  </div>
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<a class="floating-whatsapp" href="https://wa.me/923415724426?text=Assalam-o-Alaikum%20Jamia%20Masjid%20Ali%20ibn%20Abi%20Talib" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <span>WhatsApp</span>
+</a>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-text">
+        <div class="arabic">جامع مسجد علی ابن ابی طالب</div>
+        <div class="english">Jamia Masjid Ali ibn Abi Talib · Islamabad</div>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="#prayers">Prayer Times</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="https://wa.me/923415724426?text=Assalam-o-Alaikum%20Jamia%20Masjid%20Ali%20ibn%20Abi%20Talib%20-%20Donate%20Inquiry" target="_blank" rel="noopener noreferrer" class="btn-donate">Donate</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-slideshow" aria-hidden="true">
+    <div class="hero-slide active"><img src="assets/gallery/images/1.jpeg" alt="" /></div>
+    <div class="hero-slide"><img src="assets/gallery/images/2.jpeg" alt="" /></div>
+    <div class="hero-slide"><img src="assets/gallery/images/3.jpeg" alt="" /></div>
+    <div class="hero-slide"><img src="assets/gallery/images/4.jpeg" alt="" /></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-copy">
+      <div class="hero-arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+      <h1>Jamia Masjid<br/><span>Ali ibn Abi Talib</span></h1>
+      <p>A welcoming place for prayer, Quran learning, and community service in Islamabad.</p>
+      <div class="hero-buttons">
+        <a href="#prayers" class="btn-primary">Prayer Times</a>
+      </div>
+      <p class="donate-precaution hero-donate-precaution">Before donating, please meet Imam Sahab face to face or via video call, Thank You.</p>
+    </div>
+  </div>
+</section>
+
+<!-- IMAM SECTION -->
+<section class="imam-section" id="imam">
+  <div class="section-inner imam-grid">
+    <div class="imam-card">
+      <img src="assets/gallery/images/qari sartaj sahab.png" alt="Imam / Qari Sahib of Jamia Masjid Ali ibn Abi Talib" loading="lazy" />
+    </div>
+    <div class="imam-content">
+      <div class="section-label">Imam</div>
+      <h2 class="section-title">Imam Qari Siraj Sahab</h2>
+      <div class="section-divider"></div>
+      <p>Our mosque is served by a dedicated imam and Quran recitation guide who supports prayer, teaching, and spiritual guidance for the community.</p>
+      <p>This section highlights the person leading the masjid’s religious and educational work, placed here so the hero stays focused on the mosque itself.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRAYER TIMES STRIP -->
+<div class="prayer-strip">
+  <div class="prayer-strip-inner">
+    <div class="prayer-cell active">
+      <div class="prayer-name">Fajr</div>
+      <div class="prayer-arabic">الفجر</div>
+      <div class="prayer-time">4:30 AM</div>
+    </div>
+    <div class="prayer-cell">
+      <div class="prayer-name">Zuhr</div>
+      <div class="prayer-arabic">الظهر</div>
+      <div class="prayer-time">1:30 PM</div>
+    </div>
+    <div class="prayer-cell">
+      <div class="prayer-name">Asr</div>
+      <div class="prayer-arabic">العصر</div>
+      <div class="prayer-time">5:30 PM</div>
+    </div>
+    <div class="prayer-cell">
+      <div class="prayer-name">Maghrib</div>
+      <div class="prayer-arabic">المغرب</div>
+      <div class="prayer-time tbd">At Sunset</div>
+    </div>
+    <div class="prayer-cell">
+      <div class="prayer-name">Isha</div>
+      <div class="prayer-arabic">العشاء</div>
+      <div class="prayer-time">9:00 PM</div>
+    </div>
+    <div class="prayer-cell prayer-cell-jummah">
+      <div class="prayer-name">Jumu'ah</div>
+      <div class="prayer-arabic">الجمعة</div>
+      <div class="prayer-time">1:30 PM</div>
+      <div class="prayer-note">Every Friday • Khutbah included</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="section-inner">
+    <div class="section-label">What We Offer</div>
+    <h2 class="section-title">Our Services</h2>
+    <div class="section-divider"></div>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Daily Prayers</h3>
+        <p>All five daily prayers are held in congregation. Come join the community for Fajr, Zuhr, Asr, Maghrib, and Isha.</p>
+      </div>
+      <div class="service-card">
+        <h3>Quran Education</h3>
+        <p>We offer Quran classes for children and adults. Learn to read, understand, and memorise the Holy Quran.</p>
+      </div>
+      <div class="service-card">
+        <h3>Jumu'ah Prayer</h3>
+        <p>Friday Jumu'ah prayer at 1:30 PM with Khutbah (sermon). All brothers and sisters are warmly welcome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRAYER TIMES FULL TABLE -->
+<section id="prayers" class="prayer-section">
+  <div class="section-inner">
+    <div class="section-label">Salah Schedule</div>
+    <h2 class="section-title">Daily Prayer Times</h2>
+    <div class="section-divider"></div>
+    <div class="prayer-table-wrap">
+      <div class="prayer-table-header">
+        <h3>Jamia Masjid Ali ibn Abi Talib – Islamabad</h3>
+        <div class="date" id="today-date"></div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Prayer</th>
+            <th>Arabic</th>
+            <th>Adhan Time</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fajr</td>
+            <td>الفجر</td>
+            <td><span class="time-badge">4:30 AM</span></td>
+            <td>Before Sunrise</td>
+          </tr>
+          <tr>
+            <td>Jumu'ah</td>
+            <td>الجمعة</td>
+            <td><span class="time-badge">1:30 PM</span></td>
+            <td>Every Friday • Khutbah included</td>
+          </tr>
+          <tr>
+            <td>Zuhr</td>
+            <td>الظهر</td>
+            <td><span class="time-badge">1:30 PM</span></td>
+            <td>Jumu'ah on Fridays</td>
+          </tr>
+          <tr>
+            <td>Asr</td>
+            <td>العصر</td>
+            <td><span class="time-badge">5:30 PM</span></td>
+            <td>Afternoon Prayer</td>
+          </tr>
+          <tr>
+            <td>Maghrib</td>
+            <td>المغرب</td>
+            <td><span class="time-badge tbd">At Sunset</span></td>
+            <td>Minutes after Sunset</td>
+          </tr>
+          <tr>
+            <td>Isha</td>
+            <td>العشاء</td>
+            <td><span class="time-badge">9:00 PM</span></td>
+            <td>Night Prayer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:1rem;color:var(--text-muted);font-size:.85rem;text-align:center;">
+      Maghrib time changes daily with sunset. Please check locally. Times may vary slightly by season.
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery-section">
+  <div class="section-inner">
+    <div class="section-label">Our Masjid</div>
+    <h2 class="section-title">Gallery</h2>
+    <div class="section-divider" style="background:var(--gold);"></div>
+    <div class="gallery-grid">
+      <figure class="gallery-item gallery-item-tall">
+        <a href="assets/gallery/images/3.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open mosque exterior view">
+          <img src="assets/gallery/images/3.jpeg" alt="Mosque exterior view" loading="lazy" />
+        </a>
+      </figure>
+      <figure class="gallery-item">
+        <a href="assets/gallery/images/4.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open prayer area inside the mosque">
+          <img src="assets/gallery/images/4.jpeg" alt="Prayer area inside the mosque" loading="lazy" />
+        </a>
+      </figure>
+      <figure class="gallery-item">
+        <a href="assets/gallery/images/qari sartaj sahab.png" target="_blank" rel="noopener noreferrer" aria-label="Open Qari Sartaj Sahib image">
+          <img src="assets/gallery/images/qari sartaj sahab.png" alt="Qari Sartaj Sahib" loading="lazy" />
+        </a>
+      </figure>
+      <figure class="gallery-item gallery-video-item">
+        <video controls preload="metadata" poster="assets/gallery/images/1.jpeg">
+          <source src="assets/gallery/videos/2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </figure>
+      <figure class="gallery-item">
+        <a href="assets/gallery/images/2.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open community gathering at the masjid">
+          <img src="assets/gallery/images/2.jpeg" alt="Community gathering at the masjid" loading="lazy" />
+        </a>
+      </figure>
+    </div>
+    <p style="margin-top:1.5rem;color:rgba(255,255,255,.4);font-size:.85rem;text-align:center;">
+      Photos and video from the masjid and community moments.
+    </p>
+  </div>
+</section>
+
+<!-- LIGHTBOX / IMAGE MODAL -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-inner" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-prev" aria-label="Previous">‹</button>
+    <div class="lightbox-stage">
+      <img src="" alt="" loading="lazy" />
+      <div class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-next" aria-label="Next">›</button>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="section-inner">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Contact Us</h2>
+    <div class="section-divider"></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Jamia Masjid Ali ibn Abi Talib</h3>
+        <div class="info-row">
+          <div class="info-text">
+            <strong>Address</strong>
+            Plot 3-I-16, Islamabad, Pakistan
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-text">
+            <strong>Jumu'ah Prayer</strong>
+            Every Friday at 1:30 PM
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--cream);border-radius:8px;border-left:4px solid var(--gold);">
+          <h4 style="font-family:'Nunito',sans-serif;color:var(--green-dark);margin-bottom:.7rem;">Support the Construction of the Mosque</h4>
+          <p style="color:var(--text-muted);font-size:.9rem;line-height:1.7;">Our mosque is under active construction. Every donation, big or small, helps us complete and expand this place of worship for the community.</p>
+          <a href="https://wa.me/923415724426?text=Assalam-o-Alaikum%20Jamia%20Masjid%20Ali%20ibn%20Abi%20Talib%20-%20Donate%20Inquiry" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-top:1rem;display:inline-block;font-size:.8rem;padding:.7rem 1.5rem;">Contact to Donate</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section" id="map">
+  <div class="section-inner">
+    <div class="section-label">Find Us</div>
+    <h2 class="section-title">Location Map</h2>
+    <div class="section-divider"></div>
+    <div class="map-card">
+      <iframe
+        title="Jamia Masjid Ali ibn Abi Talib location map"
+        src="https://www.google.com/maps?q=33.5985553,72.9322943&z=17&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <p style="margin-top:1rem;color:var(--text-muted);font-size:.9rem;">Marked location: 33.5985553, 72.9322943.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="arabic">جامع مسجد علی ابن ابی طالب</div>
+      <div style="color:white;font-family:'Nunito',sans-serif;font-size:1rem;margin-top:.2rem;">Jamia Masjid Ali ibn Abi Talib</div>
+      <p>Serving the Muslim community of Islamabad with daily prayers, education, and spiritual guidance. Currently under expansion — your support is invaluable.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#prayers">Prayer Times</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Prayer Times</h4>
+      <ul>
+        <li><a href="#">Fajr — 4:30 AM</a></li>
+        <li><a href="#">Zuhr — 1:30 PM</a></li>
+        <li><a href="#">Asr — 5:30 PM</a></li>
+        <li><a href="#">Maghrib — Sunset</a></li>
+        <li><a href="#">Isha — 9:00 PM</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">3-I-16, Islamabad</a></li>
+        <li><a href="https://wa.me/923415724426?text=Assalam-o-Alaikum%20Jamia%20Masjid%20Ali%20ibn%20Abi%20Talib%20-%20Contact%20Inquiry" target="_blank" rel="noopener noreferrer">WhatsApp: +923415724426</a></li>
+        <li><a href="#">Imam: Qari Siraj Sahab</a></li>
+        <li><a href="#">Jumu'ah: 1:30 PM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Created by <a href="https://wa.me/923090757010" target="_blank" rel="noopener noreferrer">Nest Portfolios</a></span>
+    <span class="gold">اللَّهُمَّ اجْعَلْنَا مِنَ الْمُصْلِحِينَ</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
